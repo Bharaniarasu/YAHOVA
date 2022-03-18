@@ -1,0 +1,44 @@
+.dropdown-business {
+  position: absolute;
+  z-index: 1000;
+  /* display: none; */
+  float: left;
+  margin: 10px 0 0 -117px;
+  list-style: none;
+  font-size: 14px;
+  text-align: left;
+  background-color: #3498db;
+  -moz-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.5);
+  top: 80%;
+  left: 83.8%;
+  width: 180px;
+  padding: 38px;
+}
+/* .our-company-link {
+  text-align: left;
+  font-size: 1.1rem;
+  padding: 1rem 0;
+  font-weight: 600;
+  color: white;
+}
+.our-company:hover {
+  color: #31353d;
+} */
+
+.dropdown-business li {
+  padding: 1rem 0;
+}
+.dropdown-business-link {
+  text-decoration: none;
+  text-align: left;
+  font-size: 1.1rem;
+  /* padding: 2rem 0rem; */
+  font-weight: 600;
+  color: white;
+}
+
+.dropdown-business-link:hover {
+  color: #31353d;
+}

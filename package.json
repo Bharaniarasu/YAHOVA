@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "recompact": "^3.4.0"
+  },
+  "name": "yahova",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bharaniarasu/YAHOVA.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bharaniarasu/YAHOVA/issues"
+  },
+  "homepage": "https://github.com/Bharaniarasu/YAHOVA#readme",
+  "description": ""
+}
