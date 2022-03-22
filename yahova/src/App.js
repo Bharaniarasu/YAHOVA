@@ -1,25 +1,19 @@
 import { Router, Route } from "react-router-dom";
 import "./App.css";
-// import Banner from "./components/banner";
 import Navbar from "./components/navbar/navbar";
 import Routes from "./routes";
-import ContactUs from "./components/pages/contactUs";
-import OurBusiness from "./components/pages/ourBusiness";
-import OurCompany from "./components/pages/ourCompany";
-import AboutUs from "./components/ourCompany/aboutUs";
-import Leadership from "./components/ourCompany/leadership";
-import CompanyProfile from "./components/ourCompany/companyProfile";
-import Fishing from "./components/ourBusiness/fishing";
-import Exports from "./components/ourBusiness/exports";
-import SuperMarket from "./components/ourBusiness/supermarket";
+
 import Home from "./components/home";
 import { Switch } from "react-router-dom";
 import { createBrowserHistory } from "history";
-// import Navbar from './components/navbar';
-// import NavMenu from "./components/navbar/navMenu";
+import { useEffect } from "react";
 
 function App() {
   const browserHistory = createBrowserHistory();
+  useEffect(() => {
+    document.title = "Yahova Traders";
+  }, []);
+
   return (
     <Router history={browserHistory}>
       {/* <Navbar /> */}
@@ -30,11 +24,9 @@ function App() {
       <Switch>
         <Navbar>
           <Route exact path="/" component={Home} />
-          {/* <Home /> */}
 
           <Routes />
         </Navbar>
-        {/* <Home /> */}
       </Switch>
     </Router>
   );

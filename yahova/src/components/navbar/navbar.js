@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import OurBusiness from "../dropdown/ourBusiness";
@@ -6,13 +6,16 @@ import OurCompany from "../dropdown/ourCompany";
 import ContactUs from "../dropdown/contactUs";
 import "./navbar.css";
 import NavMenu from "./navMenu";
+import Logo from "../pictures/logo.jpeg";
+import Footer from "../footer";
+import Progress from "../scrollEffect";
 // const { Header, Content, Footer } = Layout;
 const Navbar = (props) => {
   const [icon, setIcon] = useState(false);
   const [showCompanyDropdown, setCompanyDropdown] = useState(false);
   const [showBusinessDropdown, setBusinessDropdown] = useState(false);
-  const [showContactDropdown, setContactDropdown] = useState(false);
-
+  const [scrolled, setScrolled] = useState(true);
+  const [scrollAnime, setScrollAnime] = useState(0);
   const selectCompany = () => {
     setCompanyDropdown(true);
   };
@@ -25,12 +28,12 @@ const Navbar = (props) => {
   const unselectBusiness = () => {
     setBusinessDropdown(false);
   };
-  const selectContact = () => {
-    setContactDropdown(true);
-  };
-  const unselectContact = () => {
-    setContactDropdown(false);
-  };
+  // const selectContact = () => {
+  //   setContactDropdown(true);
+  // };
+  // const unselectContact = () => {
+  //   setContactDropdown(false);
+  // };
 
   const toggleIcon = () => {
     setIcon(!icon);
@@ -41,16 +44,65 @@ const Navbar = (props) => {
 
   const { children } = props;
   // console.log("---   " + children + "-- " + props);
-  console.log(children);
+  // console.log(children);
+
+  const navbar = document.querySelector(".navbars");
+
+  window.onscroll = () => {
+    setScrolled(!scrolled);
+    if (window.scrollY > 10) {
+      navbar.classList.add("nav-active");
+      setScrolled(true);
+    } else {
+      navbar.classList.remove("nav-active");
+      setScrolled(false);
+    }
+  };
+
+  console.log(window.innerHeight);
+  // const navbar = document.querySelector(".navbars");
+
+  useEffect(() => {
+    listenToScrollEvent();
+  }, []);
+  const listenToScrollEvent = () => {
+    window.addEventListener("scroll", () => {
+      // calculateScrollDistance();
+
+      requestAnimationFrame(() => {
+        calculateScrollDistance();
+      });
+    });
+  };
+  const calculateScrollDistance = () => {
+    const scrolTop = window.pageYOffset;
+    const windowHeight = window.innerHeight;
+    const docHeight = getDocHeight();
+
+    const totalDocScrollLength = docHeight - windowHeight;
+    const scrollPosition = Math.floor((scrolTop / totalDocScrollLength) * 100);
+    setScrollAnime(scrollPosition);
+
+    console.log(getDocHeight);
+  };
+
+  const getDocHeight = () => {
+    return Math.max(
+      document.body.scrollHeight,
+      document.body.offsetHeight,
+      document.body.clientHeight,
+      document.documentElement.scrollHeight,
+      document.documentElement.offsetHeight,
+      document.documentElement.clientHeight
+    );
+  };
+
   return (
     <>
-      <nav className="navbar">
+      <Progress scroll={scrollAnime} />
+      <nav className="navbars">
         <NavMenu />
 
-        {/* <div className="nav-menu">
-        <h1>YAHOVA TRADERS PRIVATE LIMITED</h1>{" "}
-        <p>No.123, xxx , yyy, zzz- 000 000</p>
-      </div> */}
         <div onClick={toggleIcon} className="nav-icon">
           {icon ? (
             <FaTimes className="fa-times" />
@@ -63,7 +115,7 @@ const Navbar = (props) => {
         <ul className={icon ? "nav-menu active" : "nav-menu"}>
           <li
             onMouseLeave={unselectCompany}
-            className="nav-link"
+            className="nav-links"
             onMouseEnter={selectCompany}
             onClick={closeSidebar}
           >
@@ -75,7 +127,7 @@ const Navbar = (props) => {
 
           <li
             onMouseLeave={unselectBusiness}
-            className="nav-link"
+            className="nav-links"
             onMouseEnter={selectBusiness}
             onClick={closeSidebar}
           >
@@ -85,12 +137,12 @@ const Navbar = (props) => {
           </li>
 
           <li
-            onMouseLeave={unselectContact}
-            className="nav-link"
-            onMouseEnter={selectContact}
+            // onMouseLeave={unselectContact}
+            className="nav-links"
+            // onMouseEnter={selectContact}
             onClick={closeSidebar}
           >
-            <Link to="/contact-us" className="nav-link">
+            <Link to="/contact-us" className="nav-links-link">
               Contact Us
             </Link>
             {/* {showContactDropdown && <ContactUs />} */}
@@ -100,7 +152,9 @@ const Navbar = (props) => {
 
         {/* <Content>{Children}</Content> */}
       </nav>
-      <div>{children}</div>
+      <div className="i">{children}</div>
+
+      <Footer />
     </>
   );
 };

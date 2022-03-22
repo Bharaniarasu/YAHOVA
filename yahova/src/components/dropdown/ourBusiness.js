@@ -5,12 +5,12 @@ const OurBusiness = () => {
     <ul className="dropdown-business">
       <li>
         <Link to="/our-business/fishing" className="dropdown-business-link">
-          Fishing
+          Fishing <i className="fa fa-angle-right right-arrow"></i>
         </Link>
       </li>{" "}
       <li>
         <Link to="/our-business/exports" className="dropdown-business-link">
-          Exports
+          Exports<i className="fa fa-angle-right right-arrow"></i>
         </Link>
       </li>
       <li>
@@ -19,7 +19,7 @@ const OurBusiness = () => {
           to="/our-business/super-market"
           className="dropdown-business-link"
         >
-          Super Market
+          Super Market<i className="fa fa-angle-right right-arrow"></i>
         </Link>
       </li>
     </ul>

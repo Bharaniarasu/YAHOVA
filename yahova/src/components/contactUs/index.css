@@ -1,0 +1,56 @@
+.contact-us {
+  width: 100%;
+  /* position: absolute; */
+}
+
+.contact-links {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+}
+.contact-banner {
+  /* position: relative; */
+  top: 0rem;
+}
+.contact-logo {
+  font-size: 10rem;
+  /* height: 8rem; */
+  width: rem;
+  border: none;
+  background-color: transparent;
+  opacity: 0.2;
+  position: relative;
+  /* display: flex; */
+  /* justify-content: center; */
+  top: 19.5rem;
+  /* padding: 9rem; */
+  justify-content: center;
+  z-index: 1;
+  left: 1.8rem;
+  color: transparent;
+}
+.contact-logo:nth-child(2) {
+  left: 3rem;
+}
+.contact-logo:nth-child(3) {
+  left: 4rem;
+}
+
+button {
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.979);
+  border-radius: 2rem;
+  border: none;
+  width: 15.5rem;
+  height: 15.5rem;
+  opacity: 0;
+}
+.contact-logo:hover .contact-logo {
+  opacity: 1;
+}
+/* .button:hover {
+  background-color: white;
+} */
+.contact-logo:nth-child(2) {
+  color: aqua;
+}

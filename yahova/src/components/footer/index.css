@@ -1,0 +1,74 @@
+.footer {
+  height: 57vh;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255),
+    /* rgb(255, 255, 255), */ #fdd4b6
+  );
+  display: block;
+}
+.footer-content {
+  width: 100%;
+}
+.footer-logo img {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: 3rem;
+  right: 4rem;
+}
+.footer-our-company {
+  position: relative;
+  top: 4rem;
+  font-size: 1.1rem;
+  color: #fc7613;
+  font-weight: 600;
+  line-height: 4rem;
+}
+.footer-our-business {
+  position: relative;
+  top: 4rem;
+  font-size: 1.1rem;
+  color: #fc7613;
+  font-weight: 600;
+  line-height: 4rem;
+}
+.footer-contact-us {
+  position: relative;
+  top: 5rem;
+  color: #fc7613;
+  width: 200px;
+}
+.footer-content li:nth-child(1) {
+  /* padding: 0.7rem 0; */
+  padding: 0;
+  margin: 0;
+  width: 170px;
+  border-bottom: 2px solid black;
+}
+ul li {
+  list-style: none;
+  text-decoration: none;
+}
+.our-company-links,
+.our-business-links,
+.contact-us-links {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #fc7613;
+  font-weight: 600;
+}
+
+.our-company-links:hover,
+.our-business-links:hover,
+.contact-us-links:hover {
+  color: #622e2a;
+}
+.footer-copyright {
+  height: 3vh;
+  border-top: 0.1px solid rgb(0, 0, 0);
+  /* background-color: #fc7613; */
+  position: relative;
+  top: 15vh;
+}

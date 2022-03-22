@@ -1,14 +1,44 @@
-.navbar {
-  background-color: #31353d;
+.navbars {
+  background-color: #ffffff00;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 15vh;
-  width: 100vw;
+  height: 100px;
+  /* height: auto; */
+  width: 100%;
   position: fixed;
-  top: 0;
+  /* position: sticky; */
+  transition: 0.7s ease-in-out;
+
+  top: 0px;
   z-index: 9999;
 }
+
+.nav-active {
+  /* background-color: rgb(255, 255, 255); */
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255),
+    /* rgb(255, 255, 255), */ #fdd4b6
+  );
+  box-shadow: 5px -1px 22px -5px rgb(228, 62, 33);
+  height: 100px;
+  /* padding: 2rem; */
+  /* transition: 0.7s ease-in-out; */
+
+  /* // .navbars {
+  //   position: fixed;
+  //   top: 0px;
+  // } */
+}
+.foot {
+  height: 70vh;
+}
+
+/* .navbar--scrolled {
+  /* change background-color to whatever you want */
+/* background-color: rgb(230, 14, 14); */
+/* } */
 .nav-menu {
   /* background-color: #f27b35; */
 
@@ -20,21 +50,35 @@
   width: 95vw;
   position: absolute;
   transform: translate(0%, 60%);
+  top: 1rem;
 }
-.nav-link {
-  color: #ffffff;
+.nav-links {
+  /* background-color: #fc7613; */
+  color: #fc7613;
+
   text-decoration: none;
-  padding: 0.7rem 1rem;
+  padding: 0.7rem 1rem 1.2rem 1rem;
   font-weight: 700;
+  font-size: 1.2rem;
+  /* border: 2px solid #fc7613;
+  border-radius: 10px; */
+
   /* justify-content: end; */
   /* margin: 10px; */
   /* border: 2px solid; */
 }
-.nav-link:hover {
-  /* background-color: #553726; */
-  color: #3498db;
+.nav-links-link {
+  color: #fc7613;
+
+  text-decoration: none;
+}
+.nav-links:hover,
+.nav-links-link:hover {
+  /* background-color: #f8f5f2; */
+  color: #622e2a;
+
   /* padding: 1; */
-  border-radius: 10px;
+  /* border-radius: 10px; */
   transition: all 0.3s ease-out;
 }
 .nav-icon {
@@ -111,12 +155,12 @@
     z-index: 1;
     overflow: unset;
   }
-  .nav-link {
+  .nav-links {
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.4rem;
     color: rgb(255, 255, 255);
-    padding: 1rem;
+    padding: 1rem 0;
     /* padding: 4rem; */
   }
 

@@ -6,13 +6,13 @@ const OurCompany = () => {
     <ul className="dropdown-company">
       <li>
         <Link to="/our-company/about-us" className="dropdown-company-link">
-          About Us
+          About Us<i className="fa fa-angle-right right-arrow"></i>
         </Link>
       </li>{" "}
       <li>
         {" "}
         <Link to="/our-company/leadership" className="dropdown-company-link">
-          Leadership{" "}
+          Leadership <i className="fa fa-angle-right right-arrow"></i>
         </Link>
       </li>
       <li>
@@ -21,7 +21,7 @@ const OurCompany = () => {
           to="/our-company/company-profile"
           className="dropdown-company-link"
         >
-          Company Profile{" "}
+          Company Profile <i className="fa fa-angle-right right-arrow"></i>
         </Link>
       </li>
     </ul>

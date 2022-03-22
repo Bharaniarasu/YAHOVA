@@ -3,17 +3,17 @@
   z-index: 1000;
   /* display: none; */
   float: left;
-  margin: 10px 0 0 -117px;
+  margin: 0 0 0 0;
   list-style: none;
   font-size: 14px;
   text-align: left;
-  background-color: #3498db;
+  background-color: #ffffff;
   -moz-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.5);
-  top: 80%;
-  left: 73%;
-  width: 180px;
+  top: 100%;
+  left: 63%;
+  width: 280px;
   padding: 38px;
   z-index: -99;
 }
@@ -30,6 +30,11 @@
 
 .dropdown-company li {
   padding: 1rem 0;
+  border-bottom: 2px solid #ff5100;
+}
+.dropdown-company li:hover {
+  border-bottom: 2px solid #622e2a;
+  transition: 2s;
 }
 .dropdown-company-link {
   text-decoration: none;
@@ -37,9 +42,17 @@
   font-size: 1.1rem;
   /* padding: 2rem 0rem; */
   font-weight: 600;
-  color: white;
+  color: #fc7613;
 }
 
 .dropdown-company-link:hover {
-  color: #31353d;
+  color: #622e2a;
+}
+.right-arrow {
+  /* display: flex;
+  justify-content: end;
+  color: inherit; */
+  /* float: right; */
+  /* right: 20px; */
+  margin-left: 1rem;
 }
