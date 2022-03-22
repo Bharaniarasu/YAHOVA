@@ -1,26 +1,59 @@
 .nav-head {
-  color: #3498db;
-  margin-left: 50px;
-  cursor: pointer;
+  color: #fc7613;
+  /* margin-left: 50px; */
+  /* cursor: pointer; */
   font-size: 1.4rem;
   /* position: absolute;
   padding: 1.5rem 0 0 0;
   margin: 1 rem;
   transform: translate(-3%, -20%); */
+  position: relative;
+  display: inline-block;
+  top: 1.3rem;
+}
+.nav-logo {
+  width: 8rem;
+  height: 8rem;
+  position: relative;
+  display: inline-block;
+  top: -1.3rem;
+}
+.head {
+  height: 3rem;
+
+  width: 40rem;
+}
+.head-mini {
+  display: none;
 }
 .nav-head h1 {
+  color: #fc7613;
+
   margin-bottom: 0;
   margin-top: 0;
-  font-family: "Philosopher", sans-serif;
+  /* font-family: "Philosopher", sans-serif; */
+  display: inline-block;
+}
+.nav-head-title {
+  display: inline-block;
+  font-family: "Magmawave Caps", sans-serif;
 }
 .nav-head-link {
-  text-decoration: none;
-  color: #3498db;
+  /* text-decoration: none; */
+  /* color: #3498db; */
+  /* background-color: #fc7613; */
+  cursor: pointer;
+  z-index: 9999;
 }
 .nav-head p {
   margin: 0 1px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 0.8rem;
+  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
+  display: block;
+  font-family: "Cabin", sans-serif;
+  color: #622e2a;
 }
+
 @media only screen and (max-width: 960px) {
   .nav-head {
     /* color: aliceblue; */
@@ -46,5 +79,15 @@
     top: -5px;
     margin-top: 0;
     padding-top: 0;
+  }
+  .head {
+    height: 3rem;
+    display: none;
+    width: 40rem;
+  }
+  .head-mini {
+    display: inline;
+    width: 11rem;
+    height: 2rem;
   }
 }
