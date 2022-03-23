@@ -1,7 +1,8 @@
+import loader from "../components/pictures/Infinity-transperant.gif";
 const Loader = () => {
   return (
     <>
-      <h2>Loading</h2>
+      <img src={loader} />
     </>
   );
 };
