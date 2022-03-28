@@ -66,6 +66,7 @@
   /* justify-content: end; */
   /* margin: 10px; */
   /* border: 2px solid; */
+  transition: ease-in-out 0.3s;
 }
 .nav-links-link {
   color: #fc7613;
@@ -84,7 +85,14 @@
 .nav-icon {
   display: none;
 }
-
+progress::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #3498db;
+  bottom: 0;
+}
 /* .nav-dropdown {
   position: absolute;
   z-index: 1000;

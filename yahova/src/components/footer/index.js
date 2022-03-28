@@ -63,7 +63,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <div className="footer-copyright">123</div>
+      <div className="footer-copyright">@copyright02021.</div>
 
       {/* <hr /> */}
     </div>

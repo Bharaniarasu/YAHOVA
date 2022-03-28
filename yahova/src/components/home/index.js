@@ -1,13 +1,17 @@
-import Banner from "./banner";
+import Banner from "./banner/banner";
 import "./index.css";
 // import { Button, Container, Row, Col } from "bootstrap";
 import "font-awesome/css/font-awesome.min.css";
+import ComponentA from "./components/component-a";
+import ComponentB from "./components/component-b";
+import ComponentC from "./components/component-c";
+import ComponentD from "./components/component-d";
 
 const Home = () => {
   return (
     <div className="home">
       <Banner />
-      <div className="home-2 row">
+      {/* <div className="home-2 row">
         <div className="col-5 first">
           <img
             className="profile"
@@ -39,7 +43,11 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div className="col-12 alert-primary div-2"></div>
+      <div className="col-12 alert-primary div-2"></div> */}
+      <ComponentA />
+      <ComponentB />
+      <ComponentC />
+      <ComponentD />
     </div>
   );
 

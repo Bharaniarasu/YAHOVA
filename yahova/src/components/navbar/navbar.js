@@ -42,7 +42,7 @@ const Navbar = (props) => {
     setIcon(false);
   };
 
-  const { children } = props;
+  // const { children } = props;
   // console.log("---   " + children + "-- " + props);
   // console.log(children);
 
@@ -120,7 +120,14 @@ const Navbar = (props) => {
             onClick={closeSidebar}
           >
             {" "}
-            Our Company
+            Our Company{" "}
+            {/* <i
+              className={
+                showCompanyDropdown
+                  ? "fa fa-angle-down right-arrow"
+                  : "fa fa-angle-right right-arrow"
+              }
+            ></i> */}
             {showCompanyDropdown && <OurCompany />}
             {/* <OurCompany />{" "} */}
           </li>
@@ -152,9 +159,9 @@ const Navbar = (props) => {
 
         {/* <Content>{Children}</Content> */}
       </nav>
-      <div className="i">{children}</div>
+      {/* <div className="i">{children}</div> */}
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

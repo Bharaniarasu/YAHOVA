@@ -1,5 +1,5 @@
 import ImgData from "./data";
-import "./index.css";
+import "../index.css";
 const Dots = (props) => {
   const dots = ImgData.map((data, index) => {
     return (

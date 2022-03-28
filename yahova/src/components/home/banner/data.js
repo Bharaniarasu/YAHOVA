@@ -1,9 +1,9 @@
-import img1 from "../pictures/aquaculture.jpg";
-import img2 from "../pictures/boat-fishing.jpg";
-import img3 from "../pictures/export-home.jpg";
-import img4 from "../pictures/map-plane.png";
+import img1 from "../../pictures/aquaculture.jpg";
+import img2 from "../../pictures/boat-fishing.jpg";
+import img3 from "../../pictures/export-home.jpg";
+import img4 from "../../pictures/map-plane.png";
 
-import "./index.css";
+import "../index.css";
 
 const ImgData = [
   {

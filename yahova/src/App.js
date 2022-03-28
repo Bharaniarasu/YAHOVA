@@ -7,6 +7,7 @@ import Home from "./components/home";
 import { Switch } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import { useEffect } from "react";
+import Main from "./components/main";
 
 function App() {
   const browserHistory = createBrowserHistory();
@@ -22,11 +23,11 @@ function App() {
       {/* <Banner /> */}
 
       <Switch>
-        <Navbar>
+        <Main>
           <Route exact path="/" component={Home} />
 
           <Routes />
-        </Navbar>
+        </Main>
       </Switch>
     </Router>
   );

@@ -1,12 +1,13 @@
 .footer {
-  height: 57vh;
+  height: 77vh;
   width: 100%;
   background: linear-gradient(
     180deg,
     rgb(255, 255, 255),
     /* rgb(255, 255, 255), */ #fdd4b6
   );
-  display: block;
+  /* display: block; */
+  position: relative;
 }
 .footer-content {
   width: 100%;
@@ -15,12 +16,12 @@
   width: 300px;
   height: 300px;
   position: relative;
-  top: 3rem;
+  top: 8rem;
   right: 4rem;
 }
 .footer-our-company {
   position: relative;
-  top: 4rem;
+  top: 8rem;
   font-size: 1.1rem;
   color: #fc7613;
   font-weight: 600;
@@ -28,7 +29,7 @@
 }
 .footer-our-business {
   position: relative;
-  top: 4rem;
+  top: 8rem;
   font-size: 1.1rem;
   color: #fc7613;
   font-weight: 600;
@@ -36,7 +37,7 @@
 }
 .footer-contact-us {
   position: relative;
-  top: 5rem;
+  top: 9rem;
   color: #fc7613;
   width: 200px;
 }
@@ -45,7 +46,7 @@
   padding: 0;
   margin: 0;
   width: 170px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #fc7613;
 }
 ul li {
   list-style: none;
@@ -66,9 +67,25 @@ ul li {
   color: #622e2a;
 }
 .footer-copyright {
-  height: 3vh;
-  border-top: 0.1px solid rgb(0, 0, 0);
+  height: 1vh;
+  border-top: 0.1px solid #fc7613;
+  border-radius: 50%;
   /* background-color: #fc7613; */
-  position: relative;
-  top: 15vh;
+  position: absolute;
+  /* top: 15vh; */
+  bottom: 1rem;
+  width: 100%;
+  padding: 0 1rem;
 }
+/* .footer::before {
+  content: "";
+  height: 18.3vh;
+  width: 100%;
+  /* background-color: rgb(254, 245, 239); */
+/* background-color: #622e2a; */
+/* background-color: rgb(248, 195, 158); */
+/* position: absolute; */
+/* top: -18.3vh; */
+/* top: 381.5vh; */
+/* transform: translateY(50%) skewY(-5deg); */
+/* } */

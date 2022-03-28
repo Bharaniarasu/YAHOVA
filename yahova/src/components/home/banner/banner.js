@@ -1,7 +1,7 @@
 import ImgSlider from "./imgSlider";
 import { useState, useEffect, useRef } from "react";
 import Dots from "./dots";
-import "./index.css";
+import "../index.css";
 import ImgData from "./data";
 const Banner = () => {
   let count = 0;
