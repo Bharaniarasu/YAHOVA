@@ -1,19 +1,29 @@
 .component-a {
-  height: 100vh;
+  position: relative;
+  height: 81.7vh;
   width: 100%;
-  background-color: rgb(162, 251, 222);
+  background-color: rgb(246, 246, 246);
 }
 .component-b {
+  position: relative;
+  background: url("../../pictures/clock.jpg") no-repeat fixed center;
+  /* background-position: center; */
+  background-size: cover;
+
   height: 100vh;
   width: 100%;
-  background-color: rgb(250, 173, 159);
+  /* background-color: rgb(250, 173, 159); */
 }
 .component-c {
+  position: relative;
+
   height: 100vh;
   width: 100%;
   background-color: aliceblue;
 }
 .component-d {
+  position: relative;
+
   height: 80vh;
   width: 100%;
   background-color: rgb(248, 195, 158);
@@ -23,22 +33,41 @@
   content: "";
   height: 18.3vh;
   width: 100%;
-  background-color: rgb(162, 251, 222);
+  background-color: rgb(246, 246, 246);
+
+  /* background-color: rgb(0, 0, 0); */
   position: absolute;
-  bottom: 0;
-  top: 81.5vh;
+  /* bottom: 0; */
+  top: -18.3vh;
+  /* top: 81.5vh; */
   transform: translateY(50%) skewY(-5deg);
 }
-
-.component-b::after {
+.component-a::after {
   content: "";
   height: 18.3vh;
   width: 100%;
-  background-color: rgb(250, 173, 159);
+  background-color: rgb(246, 246, 246);
 
+  /* background-color: rgb(0, 0, 0); */
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  /* top: -18.3vh; */
+  /* top: 81.5vh; */
+  transform: translateY(50%) skewY(-5deg);
+}
+
+.component-b::before {
+  content: "";
+  height: 18.3vh;
+  width: 100%;
+  /* background-color: rgb(250, 173, 159); */
+  /* background: transparent; */
+  /* z-index: 12; */
+  /* opacity: 0.4; */
   position: absolute;
   /* bottom: 0; */
-  top: 181.5vh;
+  top: -18.3vh;
   transform: translateY(50%) skewY(-5deg);
 }
 .component-c::after {
@@ -49,7 +78,7 @@
 
   position: absolute;
   /* bottom: 0; */
-  top: 281.5vh;
+  top: -18.3vh;
   transform: translateY(50%) skewY(-5deg);
 }
 .component-d::after {
@@ -60,7 +89,7 @@
 
   position: absolute;
   /* bottom: 0; */
-  top: 381.5vh;
+  top: -18.3vh;
   transform: translateY(50%) skewY(-5deg);
 }
 .component-d::before {

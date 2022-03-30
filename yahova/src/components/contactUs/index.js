@@ -6,6 +6,8 @@ const ContactUs = () => {
   return (
     <div className="contact-us">
       {/* <h1 class="bi bi-envelope"></h1> */}
+      <img src={Banner} className="contact-banner" />
+
       <div className="row contact-links">
         <div className=" offset-3 col-2 contact-logo">
           {" "}
@@ -34,7 +36,6 @@ const ContactUs = () => {
           </Link>
         </div>
       </div>
-      <img src={Banner} className="contact-banner" />
     </div>
   );
   // <h1> ContactUs</h1>;

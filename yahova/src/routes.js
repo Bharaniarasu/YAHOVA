@@ -14,7 +14,7 @@ const CompanyProfile = lazy(() =>
 );
 const Fishing = lazy(() => import("./components/ourBusiness/fishing"));
 const Exports = lazy(() => import("./components/ourBusiness/exports"));
-const SuperMarket = lazy(() => import("./components/ourBusiness/supermarket"));
+const SuperMarket = lazy(() => import("./components/ourBusiness/superMarket"));
 const ContactUs = lazy(() => import("./components/contactUs"));
 
 const Routes = () => (

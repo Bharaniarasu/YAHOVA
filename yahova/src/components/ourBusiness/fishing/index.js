@@ -1,4 +1,4 @@
-import Banner from "../pictures/fishing.jpg";
+import Banner from "../../pictures/fishing.jpg";
 
 const Fishing = () => {
   return (

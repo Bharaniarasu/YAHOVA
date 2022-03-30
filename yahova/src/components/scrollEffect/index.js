@@ -3,19 +3,18 @@ import styled from "styled-components";
 const Progress = styled.div`
   position: fixed;
   background: linear-gradient(
-    to bottom,
+    to right,
     gold,
     red,
     yellow,
     red ${(props) => props.scroll}%,
     transparent 0
   );
-  width: 5px;
-  height: 100%;
-  z-index: 1;
+  width: 101%;
+  height: 10px;
+  z-index: 2;
   opacity: 0.4;
-
-  left: 49%;
+  top: 100px;
 `;
 
 export default Progress;

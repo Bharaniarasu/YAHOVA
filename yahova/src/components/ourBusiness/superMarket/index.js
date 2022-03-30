@@ -1,4 +1,4 @@
-import Banner from "../pictures/super-market.jpg";
+import Banner from "../../pictures/super-market.jpg";
 
 const SuperMarket = () => {
   return (

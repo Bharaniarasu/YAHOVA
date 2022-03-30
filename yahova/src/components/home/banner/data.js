@@ -9,18 +9,22 @@ const ImgData = [
   {
     src: img1,
     caption: "img1",
+    link: "/abc1",
   },
   {
     src: img2,
     caption: "img2",
+    link: "/abc2",
   },
   {
     src: img3,
     caption: "img3",
+    link: "/abc3",
   },
   {
     src: img4,
     caption: "img4",
+    link: "/abc4",
   },
 ];
 export default ImgData;
