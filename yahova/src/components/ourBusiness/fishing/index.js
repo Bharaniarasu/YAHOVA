@@ -1,9 +1,17 @@
 import Banner from "../../pictures/fishing.jpg";
+import ComponentA from "./component-a";
+import ComponentB from "./component-b";
+import ComponentC from "./component-c";
 
 const Fishing = () => {
   return (
     <>
-      <img src={Banner} />
+      <div className="fishing">
+        <img src={Banner} className="fishing-banner" />
+        <ComponentA />
+        <ComponentB />
+        <ComponentC />
+      </div>
     </>
   );
 };

@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import ImgData from "./data";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 const ImgSlider = (props) => {
   const slider = ImgData.map((data, index) => {
     return (
@@ -10,8 +12,11 @@ const ImgSlider = (props) => {
         }
       >
         <Link to={data.link}>
-          <img src={data.src} alt={data.caption} />
+          <AliceCarousel>
+            <img src={data.src} alt={data.caption} />
+          </AliceCarousel>
         </Link>
+
         {/* <div className="slides-text">{data.caption}</div> */}
       </div>
     );

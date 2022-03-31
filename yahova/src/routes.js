@@ -16,18 +16,24 @@ const Fishing = lazy(() => import("./components/ourBusiness/fishing"));
 const Exports = lazy(() => import("./components/ourBusiness/exports"));
 const SuperMarket = lazy(() => import("./components/ourBusiness/superMarket"));
 const ContactUs = lazy(() => import("./components/contactUs"));
-
+const ContactContent = lazy(() => import("./components/contactUs/content"));
 const Routes = () => (
   <Suspense fallback={<Loader />}>
     <Switch>
       {/* <Route exact path="/" component={Home} /> */}
-      <Route path="/our-company/about-us" component={AboutUs} />
-      <Route path="/our-company/leadership" component={Leadership} />
-      <Route path="/our-company/company-profile" component={CompanyProfile} />
-      <Route path="/our-business/fishing" component={Fishing} />
-      <Route path="/our-business/exports" component={Exports} />
-      <Route path="/our-business/super-market" component={SuperMarket} />
-      <Route path="/contact-us" component={ContactUs} />
+      <Route exact path="/our-company/about-us" component={AboutUs} />
+      <Route exact path="/our-company/leadership" component={Leadership} />
+      <Route
+        exact
+        path="/our-company/company-profile"
+        component={CompanyProfile}
+      />
+      <Route exact path="/our-business/fishing" component={Fishing} />
+      <Route exact path="/our-business/exports" component={Exports} />
+      <Route exact path="/our-business/super-market" component={SuperMarket} />
+      <Route exact path="/contact-us" component={ContactUs} />
+      <Route exact path="/contact-us/content" component={ContactContent} />
+
       {/* <RoutePath /> */}
     </Switch>
   </Suspense>

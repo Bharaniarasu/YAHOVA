@@ -20,7 +20,6 @@ h3 {
 }
 .slides img {
   height: 118.3vh;
-
   width: 100%;
 }
 .slides-none {
@@ -31,36 +30,23 @@ h3 {
   text-align: center;
   background-color: rgb(216, 179, 153);
 }
-.slides-fade {
-  animation-name: fade1;
-  animation-duration: 2s;
-}
-@keyframes fade {
-  from {
-    /* opacity: 0.3; */
-    position: relative;
-    left: 0;
-  }
-  to {
-    /* opacity: 1; */
-    position: relative;
-    left: -100%;
-  }
-}
+
 .slides {
   animation-name: fade;
-  animation-duration: 2s;
+  animation-duration: 2s all linear;
+  width: 100%;
 }
-@keyframes fade12 {
+
+@keyframes fade {
   from {
-    /* opacity: 0.3; */
-    position: relative;
-    right: -100%;
+    opacity: 0.3;
+    /* position: relative; */
+    /* right: -100%; */
   }
   to {
-    /* opacity: 1; */
-    position: relative;
-    right: 0;
+    opacity: 1;
+    /* position: relative; */
+    /* right: 0; */
   }
 }
 

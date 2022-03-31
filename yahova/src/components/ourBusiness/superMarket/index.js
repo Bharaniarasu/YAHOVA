@@ -1,9 +1,17 @@
 import Banner from "../../pictures/super-market.jpg";
-
+import ComponentA from "./component-a";
+import ComponentB from "./component-b";
+import ComponentC from "./component-c";
+import "./index.css";
 const SuperMarket = () => {
   return (
     <>
-      <img src={Banner} />
+      <div className="super-market">
+        <img src={Banner} className="super-market-banner" />
+        <ComponentA />
+        <ComponentB />
+        <ComponentC />
+      </div>
     </>
   );
 };
