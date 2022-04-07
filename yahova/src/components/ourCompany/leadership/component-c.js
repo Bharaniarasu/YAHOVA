@@ -1,10 +1,13 @@
 import "../index.scss";
 import Profile from "../../pictures/profile-man.jpg";
-const ComponentB = () => {
+const ComponentC = () => {
   return (
     <>
       <div className="leadership-comp-b">
         <div className="row fullpage">
+          <div className=" col-6 fullpage-first">
+            <img src={Profile} className="fullpage-first-content" />
+          </div>
           <div className=" col-6 fullpage-second">
             <div className="fullpage-second-content">
               <h1>Hi, I'm Alexander</h1>
@@ -36,12 +39,9 @@ const ComponentB = () => {
               <a className="fullpage-second-content-button">Contact</a>
             </div>
           </div>
-          <div className=" col-6 fullpage-first">
-            <img src={Profile} className="fullpage-first-content" />
-          </div>
         </div>
       </div>
     </>
   );
 };
-export default ComponentB;
+export default ComponentC;

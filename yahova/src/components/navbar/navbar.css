@@ -8,9 +8,9 @@
   width: 100%;
   position: fixed;
   /* position: sticky; */
-  transition: 0.7s ease-in-out;
+  transition: 0.5s linear;
 
-  top: 0px;
+  /* top: 10px; */
   z-index: 9999;
 }
 
@@ -68,6 +68,24 @@
   /* border: 2px solid; */
   transition: ease-in-out 0.3s;
 }
+.nav-links::after {
+  content: "";
+  display: block;
+  margin-top: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 2px;
+  width: 0%;
+  background-color: #622e2a;
+  /* color: #622e2a; */
+
+}
+.nav-links:hover::after {
+  width: 100%;
+  transition: all 0.6s;
+}
+
+
 .nav-links-link {
   color: #fc7613;
 

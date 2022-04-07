@@ -11,6 +11,10 @@
   display: inline-block;
   top: 1.3rem;
 }
+.nav-head Link{
+  color: #fc7613;
+
+}
 .nav-logo {
   width: 8rem;
   height: 8rem;

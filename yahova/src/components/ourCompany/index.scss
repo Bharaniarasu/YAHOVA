@@ -1,0 +1,95 @@
+
+
+.leadership-banner,
+.company-profile-banner {
+  height: 100vh;
+  width: 100%;
+}
+
+
+// .leadership-comp-a::after,
+// .company-profile-comp-a::after {
+//   content: "";
+//   height: 18.3vh;
+//   width: 100%;
+
+//   position: absolute;
+//   bottom: 0;
+//   z-index: 1;
+//   transform: translateY(50%) skewY(-5deg);
+// }
+
+// .leadership-comp-a::before,
+// .company-profile-comp-a::before {
+//   content: "";
+//   height: 18.3vh;
+//   width: 100%;
+//   /* background-color: rgb(255, 186, 159); */
+//   position: absolute;
+//   top: -18.3vh;
+//   z-index: 1;
+//   transform: translateY(50%) skewY(-5deg);
+// }
+
+.company-profile {
+  position: relative;
+}
+.company-profile-comp-a {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background: url("https://picsum.photos/id/1076/600/400") no-repeat ;
+  background-size: cover;
+
+  
+}
+// .company-profile-comp-a::before {
+//   background-color: rgb(230, 233, 236);
+// }
+// .company-profile-comp-a::after {
+//   background-color: rgb(230, 233, 236);
+// }
+.company-profile-data{
+  padding: 5rem;
+  // margin-left: 10rem;
+  border: 2px solid ;
+  width: 80%;
+  height: 80%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.461);
+color: rgb(247, 247, 247);
+  // align-items: center;
+
+  ul{
+    // float: left;
+    margin-top: 1  rem;
+
+    display: block;
+    li{
+display: inline-block;
+margin-left: 10rem;
+      // float: left;
+    }
+    
+  }
+
+}
+.row{
+  padding: 1rem;
+  align-items: center;
+  // text-align: right;
+
+}
+.col-4{
+  // text-align: right;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+
+.company-profile-comp-a{
+ 
+}

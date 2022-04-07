@@ -1,5 +1,5 @@
 import Banner from "../../pictures/company-1.jpg";
-import "../index.css";
+import "../index.scss";
 import ComponentA from "./component-a";
 
 const CompanyProfile = () => {

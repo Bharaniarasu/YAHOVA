@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Banner from "../pictures/contact-1.jpg";
 import Content from "./content";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./index.css";
+import "./index.scss";
 const ContactUs = () => {
   return (
     <>

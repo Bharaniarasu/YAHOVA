@@ -1,5 +1,5 @@
 import { Router, Route } from "react-router-dom";
-import "./App.css";
+import "./App.scss";
 import Navbar from "./components/navbar/navbar";
 import Routes from "./routes";
 
@@ -8,13 +8,16 @@ import { Switch } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import { useEffect } from "react";
 import Main from "./components/main";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 function App() {
   const browserHistory = createBrowserHistory();
   useEffect(() => {
     document.title = "Yahova Traders";
   }, []);
-
   return (
     <Router history={browserHistory}>
       {/* <Navbar /> */}

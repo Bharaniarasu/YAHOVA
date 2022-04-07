@@ -59,6 +59,15 @@ const Navbar = (props) => {
     }
   };
 
+  // show navbar on scroll up//
+  let prevScrollPos = window.pageYOffset;
+  window.addEventListener("scroll", () => {
+    let currentScrollPos = window.pageYOffset;
+    prevScrollPos > currentScrollPos
+      ? (navbar.style.top = "0")
+      : (navbar.style.top = "-100px");
+    prevScrollPos = currentScrollPos;
+  });
   console.log(window.innerHeight);
   // const navbar = document.querySelector(".navbars");
 

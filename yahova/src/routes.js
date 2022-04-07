@@ -31,8 +31,8 @@ const Routes = () => (
       <Route exact path="/our-business/fishing" component={Fishing} />
       <Route exact path="/our-business/exports" component={Exports} />
       <Route exact path="/our-business/super-market" component={SuperMarket} />
-      <Route exact path="/contact-us" component={ContactUs} />
-      <Route exact path="/contact-us/content" component={ContactContent} />
+      {/* <Route exact path="/contact-us" component={ContactUs} /> */}
+      <Route exact path="/contact-us" component={ContactContent} />
 
       {/* <RoutePath /> */}
     </Switch>

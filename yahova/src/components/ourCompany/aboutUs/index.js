@@ -1,5 +1,7 @@
 import Banner from "../../pictures/ship-export.jpg";
-import "../index.css";
+import "./index.css";
+import "../index.scss";
+
 import ComponentA from "./component-a";
 const AboutUs = () => {
   return (

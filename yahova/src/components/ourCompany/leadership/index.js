@@ -1,7 +1,8 @@
 import Banner from "../../pictures/meeting.jpg";
-import "../index.css";
+import "../index.scss";
 import ComponentA from "./component-a";
 import ComponentB from "./component-b";
+import ComponentC from "./component-c";
 
 const Leadership = () => {
   return (
@@ -10,6 +11,7 @@ const Leadership = () => {
         <img src={Banner} className="leadership-banner" />
         <ComponentA />
         <ComponentB />
+        <ComponentC />
       </div>
     </>
   );
