@@ -63,6 +63,7 @@ button:hover .contact-logo {
   width: 100%;
   height: 110vh;
   position: relative;
+  overflow: hidden;
 }
 
 .content-banner {
@@ -74,6 +75,9 @@ button:hover .contact-logo {
   top: 25vh;
   left: 40%;
   /* font-weight: 600; */
+}
+.content-banner-text::-moz-selection{
+  background-color: #fc7613;
 }
 .content-banner-text h1 {
   font-weight: 600;
@@ -103,10 +107,12 @@ button:hover .contact-logo {
   line-height: 2rem;
   padding: 2rem;
   transition: 1s ease;
+
   p {
     margin: 4rem 0;
   }
 }
+
 .hidden-data-middle {
   position: absolute;
   top: -70%;
@@ -230,9 +236,13 @@ button:hover .contact-logo {
   padding: 2rem;
   transition: 1s ease;
   opacity: 0.9;
+  animation:float 5s ease-in-out infinite;
+
 }
 .content-data-left:hover {
   opacity: 1;
+  animation: none;
+
 }
 .content-data-middle {
   background-color: rgb(255, 255, 255);
@@ -243,9 +253,13 @@ button:hover .contact-logo {
   padding: 2rem 0;
   transition: 1s ease;
   opacity: 0.9;
+  animation:float 5s ease-in-out infinite;
+animation-delay: 1s;
 }
 .content-data-middle:hover {
   opacity: 1;
+  animation: none;
+
 }
 .content-data-left h3,
 .content-data-middle h3 {
@@ -260,9 +274,25 @@ button:hover .contact-logo {
   line-height: 7rem;
   padding: 2rem;
   opacity: 0.9;
+  animation:float 5s ease-in-out infinite;
+  animation-delay: 2s;
 }
+@keyframes float{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-25px);
+  
+  }
+  100%{
+    transform: translateY(0);
+  
+  }
+  }
 .content-data-right:hover {
   opacity: 1;
+  animation: none;
 }
 
 .content-data-left > p,

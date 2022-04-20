@@ -15,10 +15,8 @@ const NavMenu = () => {
         {" "}
         <h1>
           {" "}
-          <Link to="/">
-            YAHOVA <span className="nav-head-traders">TRADERS</span>{" "}
-            <span class="nav-head-span">PRIVATE LIMITED</span>
-          </Link>
+          YAHOVA <span className="nav-head-traders">TRADERS</span>{" "}
+          <span class="nav-head-span">PRIVATE LIMITED</span>
         </h1>
         {/* <img src={Head} className="head" />
         <img src={HeadMini} className="head-mini" />{" "} */}

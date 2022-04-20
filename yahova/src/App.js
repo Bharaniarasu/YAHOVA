@@ -11,12 +11,22 @@ import Main from "./components/main";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-AOS.init();
+// AOS.init();
 
 function App() {
   const browserHistory = createBrowserHistory();
   useEffect(() => {
     document.title = "Yahova Traders";
+    AOS.init({
+      // Global settings:
+      debounceDelay: 3, // the delay on debounce used while resizing window (advanced)
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: true,
+    });
+
+    AOS.refresh();
   }, []);
   return (
     <Router history={browserHistory}>

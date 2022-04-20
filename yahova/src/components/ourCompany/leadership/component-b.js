@@ -1,5 +1,6 @@
 import "../index.scss";
 import Profile from "../../pictures/profile-man.jpg";
+import { Link } from "react-router-dom";
 const ComponentB = () => {
   return (
     <>
@@ -33,7 +34,9 @@ const ComponentB = () => {
               <br />
               <br />
 
-              <a className="fullpage-second-content-button">Contact</a>
+              <Link to="" className="fullpage-second-content-button">
+                Contact
+              </Link>
             </div>
           </div>
           <div className=" col-6 fullpage-first">
