@@ -3,6 +3,8 @@ import { useState, useEffect, useRef } from "react";
 import Dots from "./dots";
 import "../index.css";
 import ImgData from "./data";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Banner = () => {
   let count = 0;
   const [slideIndex, setSlideIndex] = useState(0);
@@ -24,6 +26,10 @@ const Banner = () => {
     }
   }
   useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+    // AOS.refreshHard();
+
     resetTimeout();
     timeoutRef.current = setTimeout(
       () =>
@@ -43,8 +49,8 @@ const Banner = () => {
     // };
   }, [slideIndex]);
 
-  console.log("index  " + slideIndex);
-  console.log("arrow  " + arrow);
+  // console.log("index  " + slideIndex);
+  // console.log("arrow  " + arrow);
 
   return (
     <div className="banner">
