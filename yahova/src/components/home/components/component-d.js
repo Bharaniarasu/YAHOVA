@@ -1,4 +1,4 @@
-import "./component.css";
+import "./component.scss";
 
 const ComponentD = () => {
   return (

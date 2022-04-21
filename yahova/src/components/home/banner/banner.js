@@ -42,7 +42,7 @@ const Banner = () => {
             ? ImgData.length - 1
             : slideIndex - 1
         ),
-      3000
+      10000
     );
     // return () => {
     //   resetTimeout();
