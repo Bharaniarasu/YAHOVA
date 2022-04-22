@@ -16,17 +16,69 @@
 }
 .component-c {
   position: relative;
-
-  height: 70vh;
+  height: 60vh;
   width: 100%;
   background-color: aliceblue;
+  .content {
+    position: relative;
+    top: -5%;
+    // left: 10%;
+    z-index: 1;
+    width: 106%;
+    padding: 1rem;
+    // margin: 1rem;
+    // padding-left: 1rem;
+    .content-1,
+    .content-2,
+    .content-3,
+    .content-4 {
+      // border: 2px solid;
+      height: 35vh;
+      margin: 1rem;
+      width: 22%;
+      box-shadow: 0px 2px 10px 2px rgb(105, 104, 104);
+      padding: 2rem;
+    }
+    .content-1:hover,
+    .content-2:hover,
+    .content-3:hover,
+    .content-4:hover {
+      box-shadow: 0px 2px 10px 4px rgb(105, 104, 104);
+    }
+    .content-header {
+      h1 {
+        text-align: center;
+      }
+    }
+  }
 }
 .component-d {
   position: relative;
 
   height: 80vh;
   width: 100%;
-  background-color: rgb(248, 195, 158);
+  // background-color: rgb(248, 195, 158);
+  background: url("../../pictures/world-map.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  .content {
+    position: relative;
+    top: 18vh;
+    padding: 3rem;
+  }
+  .content-1,
+  .content-2,
+  .content-3,
+  .content-4 {
+    padding: 2rem;
+    text-align: center;
+  }
+  img {
+    height: 7vh;
+  }
+  h4 {
+    font-weight: 600;
+  }
 }
 
 .component-a::before {
@@ -85,7 +137,8 @@
   content: "";
   height: 18.3vh;
   width: 100%;
-  background-color: rgb(248, 195, 158);
+  // background-color: rgb(255, 255, 255);
+  background-color: aliceblue;
 
   position: absolute;
   /* bottom: 0; */
@@ -96,15 +149,16 @@
   content: "";
   height: 18.3vh;
   width: 100%;
-  background-color: rgb(248, 195, 158);
+  // background-color: rgb(248, 195, 158);
 
-  /* background-color: black; */
+  background-color: rgb(255, 255, 255);
   position: absolute;
-  bottom: 0rem;
+  bottom: 0vh;
+  // top: 20vh;
   /* bottom: 20rem; */
   /* top: 381.5vh; */
   transform: translateY(50%) skewY(-5deg);
-  z-index: 1;
+  z-index: 0;
 }
 
 .component-a > .content {
@@ -140,36 +194,6 @@
       font-size: 1.1rem;
       line-height: 2rem;
       text-align: justify;
-    }
-  }
-}
-
-.component-c {
-  .content {
-    position: relative;
-    top: 6%;
-    // left: 10%;
-    z-index: 1;
-    width: 106%;
-    padding: 1rem;
-    // margin: 1rem;
-    // padding-left: 1rem;
-    .content-1,
-    .content-2,
-    .content-3,
-    .content-4 {
-      // border: 2px solid;
-      height: 35vh;
-      margin: 1rem;
-      width: 22%;
-      box-shadow: 0px 2px 10px 2px rgb(105, 104, 104);
-      padding: 2rem;
-    }
-    .content-1:hover,
-    .content-2:hover,
-    .content-3:hover,
-    .content-4:hover {
-      box-shadow: 0px 2px 10px 4px rgb(105, 104, 104);
     }
   }
 }

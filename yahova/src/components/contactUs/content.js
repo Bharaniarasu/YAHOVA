@@ -49,12 +49,12 @@ const Content = () => {
             onMouseLeave={handleLeftBar}
           >
             <i className="fa fa-phone"></i>
-            <h1>Talk to Experts</h1>
+            <h2>Talk to Experts</h2>
             <p>
               Interested in Importing and Exporting? Just pick up the phone to
               chat with a member of our team
             </p>
-            <h3>+91 9876543210</h3>
+            <h4>+91 9876543210</h4>
           </div>
           <div
             className={
@@ -65,8 +65,8 @@ const Content = () => {
             onMouseLeave={handleMiddleBar}
           >
             <i className="fa fa-home"></i>
-            <h1>Reach Us</h1>
-            <h3>ADDRESS</h3>
+            <h2>Reach Us</h2>
+            <h4>ADDRESS</h4>
             <p>
               No.8/466,
               <br /> Gandhi Street ,<br /> Vijaya Nagaram,
@@ -83,13 +83,15 @@ const Content = () => {
             onMouseLeave={handleRightBar}
           >
             <i className="fa fa-envelope"></i>
-            <h1>Contact Customer Support</h1>
+            <h2>Contact Customer Support</h2>
             <p>
               Sometimes you need a little help from your friends. Don't worry...
               we're here for you.
             </p>
 
-            <button onClick={Mail}>Contact</button>
+            <a onClick={Mail} className="button">
+              Contact
+            </a>
           </div>
         </div>
 

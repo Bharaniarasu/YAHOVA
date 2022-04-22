@@ -1,4 +1,4 @@
-import Banner from "../../pictures/fishing.jpg";
+import Banner from "../../pictures/single-boat.jpg";
 import ComponentA from "./component-a";
 import ComponentB from "./component-b";
 import ComponentC from "./component-c";
