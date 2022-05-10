@@ -1,7 +1,7 @@
 import Banner from "../../pictures/exports.jpg";
 import ComponentA from "./component-a";
-import ComponentB from "./component-b";
-import "./index.css";
+import ComponentB from "./component-c";
+import "./index.scss";
 const Exports = () => {
   return (
     <>
