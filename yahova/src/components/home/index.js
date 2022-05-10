@@ -6,6 +6,7 @@ import ComponentA from "./components/component-a";
 import ComponentB from "./components/component-b";
 import ComponentC from "./components/component-c";
 import ComponentD from "./components/component-d";
+import ComponentE from "./components/component-e";
 
 const Home = () => {
   return (
@@ -47,6 +48,8 @@ const Home = () => {
       <ComponentA />
       <ComponentB />
       <ComponentC />
+      <ComponentE />
+
       <ComponentD />
     </div>
   );

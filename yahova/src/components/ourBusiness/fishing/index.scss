@@ -65,11 +65,38 @@
   height: 100vh;
   position: relative;
 }
-.fishing-component-c {
-  background-color: rgb(235, 255, 255);
-}
+
 .fishing-component-b {
-  background-color: rgb(251, 230, 202);
+  background-color: rgb(250, 242, 231);
+  display: flex;
+  .content {
+    align-items: center;
+    margin: 2rem;
+    .content-1 {
+      padding: 2rem;
+    }
+    .content-2 {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+.fishing-component-c {
+  background-color: rgb(245, 254, 254);
+  display: flex;
+  .content {
+    align-items: center;
+    margin: 2rem;
+    .content-2 {
+      padding: 2rem;
+    }
+    .content-1 {
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
 // .fishing-component-a::after,
 // .fishing-component-b::after,
