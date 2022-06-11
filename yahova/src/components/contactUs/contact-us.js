@@ -1,7 +1,7 @@
 // import { Alert } from "bootstrap";
 import { useEffect, useState } from "react";
 import service from "../services/service";
-
+import { Link, useHistory } from "react-router-dom";
 const ContactUs = () => {
   const [name, setName] = useState("");
   const [mailId, setMailId] = useState("");
@@ -9,6 +9,7 @@ const ContactUs = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
+  const navigate = useHistory();
   const nameChangeHandler = (event) => {
     setName(event.target.value);
   };
@@ -16,16 +17,25 @@ const ContactUs = () => {
     setMailId(event.target.value);
   };
   const phoneChangeHandler = (event) => {
-    setPhone(event.target.value);
+    if (event.target.value.length > 10) {
+      return false;
+    } else {
+      setPhone(event.target.value);
+    }
   };
   const subjectChangeHandler = (event) => {
-    setSubject(event.target.value);
+    if (event.target.value.length > 100) {
+      return false;
+    } else {
+      setSubject(event.target.value);
+    }
   };
   const messageChangeHandler = (event) => {
     setMessage(event.target.value);
   };
 
-  const submitData = () => {
+  const submitData = (e) => {
+    e.preventDefault();
     const data = {
       name: name,
       mailId: mailId,
@@ -36,14 +46,21 @@ const ContactUs = () => {
     // alert("data " + JSON.stringify(data));
     console.log("data " + JSON.stringify(data));
     service.createData(data).then((res) => {
-      alert("We receive your message . Our team will contact you ASAP !");
+      alert("We received your query . Our team will contact you ASAP !");
       console.log(data);
     });
+
+    // navigate.push("/contact-us");
+    setName("");
+    setMailId("");
+    setPhone("");
+    setSubject("");
+    setMessage("");
   };
 
   useEffect(() => {
     service.getData().then((res) => {
-      console.log("GetResponse    " + JSON.stringify(res));
+      // console.log("GetResponse    " + JSON.stringify(res));
     });
   });
   return (
@@ -87,6 +104,7 @@ const ContactUs = () => {
                   className="form-control"
                   placeholder="Enter your valid Phone number"
                   value={phone}
+                  max="12"
                   onChange={phoneChangeHandler}
                 ></input>
               </div>{" "}
@@ -109,13 +127,15 @@ const ContactUs = () => {
                   onChange={messageChangeHandler}
                 ></textarea>
               </div>
-              <button
-                className="btn btn-info"
-                onClick={submitData}
-                style={{ marginTop: "30px" }}
-              >
-                SUBMIT
-              </button>
+              <Link to="/contact-us">
+                <button
+                  className="btn btn-info"
+                  onClick={submitData}
+                  style={{ marginTop: "30px" }}
+                >
+                  SUBMIT
+                </button>
+              </Link>
             </form>
           </div>
         </div>
