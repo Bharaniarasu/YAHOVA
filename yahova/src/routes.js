@@ -15,8 +15,8 @@ const CompanyProfile = lazy(() =>
 const Fishing = lazy(() => import("./components/ourBusiness/fishing"));
 const Exports = lazy(() => import("./components/ourBusiness/exports"));
 const SuperMarket = lazy(() => import("./components/ourBusiness/superMarket"));
-const ContactUs = lazy(() => import("./components/contactUs"));
-const ContactContent = lazy(() => import("./components/contactUs/content"));
+const ContactUs = lazy(() => import("./components/contactUs/contact-us"));
+// const ContactContent = lazy(() => import("./components/contactUs/content"));
 const Routes = () => (
   <Suspense fallback={<Loader />}>
     <Switch>
@@ -31,8 +31,8 @@ const Routes = () => (
       <Route exact path="/our-business/fishing" component={Fishing} />
       <Route exact path="/our-business/exports" component={Exports} />
       <Route exact path="/our-business/super-market" component={SuperMarket} />
-      {/* <Route exact path="/contact-us" component={ContactUs} /> */}
-      <Route exact path="/contact-us" component={ContactContent} />
+      <Route exact path="/contact-us" component={ContactUs} />
+      {/* <Route exact path="/contact-us" component={ContactContent} /> */}
 
       {/* <RoutePath /> */}
     </Switch>

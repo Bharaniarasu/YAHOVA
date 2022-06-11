@@ -68,7 +68,7 @@ const Navbar = (props) => {
       : (navbar.style.top = "-100px");
     prevScrollPos = currentScrollPos;
   });
-  console.log(window.innerHeight);
+  // console.log(window.innerHeight);
   // const navbar = document.querySelector(".navbars");
 
   useEffect(() => {

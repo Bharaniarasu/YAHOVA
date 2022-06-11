@@ -6,7 +6,7 @@ const ComponentB = () => {
       <div className="fishing-component-b">
         <div className="row content">
           <div className="col-8 content-1">
-            <h2>Fishing</h2>
+            <h1>Fishing</h1>
             <br />
             <br />
             <p>

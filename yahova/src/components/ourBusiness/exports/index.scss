@@ -24,6 +24,10 @@
     .content-data {
       padding: 0 3rem;
       text-align: justify;
+      h1 {
+        font-weight: 600;
+        font-variant-caps: all-petite-caps;
+      }
     }
   }
 }
@@ -31,7 +35,9 @@
   height: 100vh;
   width: 100%;
   position: relative;
-  background-color: rgb(251, 230, 202);
+  // background-color: rgb(251, 230, 202);
+  background-color: rgb(250, 242, 231);
+
   display: flex;
 
   .content {
@@ -52,6 +58,10 @@
     .content-data {
       padding: 0 0 0 5rem;
       text-align: justify;
+      h1 {
+        font-weight: 600;
+        font-variant-caps: all-petite-caps;
+      }
     }
   }
 }

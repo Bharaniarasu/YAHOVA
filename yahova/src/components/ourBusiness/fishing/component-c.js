@@ -9,7 +9,7 @@ const ComponentC = () => {
             <img src={Fish} alt="fishing" />
           </div>
           <div className="col-8 content-2">
-            <h2>Fish Hatcheries</h2>
+            <h1>Fish Hatcheries</h1>
             <br />
             <br />
             <p>

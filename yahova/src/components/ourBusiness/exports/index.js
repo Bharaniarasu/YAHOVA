@@ -1,6 +1,6 @@
-import Banner from "../../pictures/exports.jpg";
+import Banner from "../../pictures/export-banner.jpg";
 import ComponentA from "./component-a";
-import ComponentB from "./component-c";
+import ComponentB from "./component-b";
 import "./index.scss";
 const Exports = () => {
   return (

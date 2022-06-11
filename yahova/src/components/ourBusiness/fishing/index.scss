@@ -62,7 +62,7 @@
 }
 .fishing-component-b,
 .fishing-component-c {
-  height: 100vh;
+  height: 80vh;
   position: relative;
 }
 
@@ -72,6 +72,10 @@
   .content {
     align-items: center;
     margin: 2rem;
+    h1 {
+      font-weight: 600;
+      font-variant-caps: all-petite-caps;
+    }
     .content-1 {
       padding: 2rem;
     }
@@ -83,11 +87,15 @@
   }
 }
 .fishing-component-c {
-  background-color: rgb(245, 254, 254);
+  background-color: rgb(255, 255, 255);
   display: flex;
   .content {
     align-items: center;
     margin: 2rem;
+    h1 {
+      font-weight: 600;
+      font-variant-caps: all-petite-caps;
+    }
     .content-2 {
       padding: 2rem;
     }

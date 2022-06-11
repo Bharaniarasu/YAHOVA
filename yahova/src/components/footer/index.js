@@ -58,9 +58,13 @@ const Footer = () => {
           </ul>
         </div>
         <div className="col-2 footer-contact-us">
-          <Link to="/contact-us" className="contact-us-links">
-            Contact Us<i className="fa fa-angle-right right-arrow"></i>
-          </Link>
+          <ul>
+            <li>
+              <Link to="/contact-us" className="contact-us-links">
+                Contact Us<i className="fa fa-angle-right right-arrow"></i>
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
       <div className="footer-copyright">@copyright02021.</div>
