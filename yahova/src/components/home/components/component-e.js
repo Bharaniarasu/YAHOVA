@@ -11,7 +11,6 @@ const ComponentE = () => {
           <div className="col-7 content-data">
             <h1>Imports & Exports</h1>
             <br />
-            <br />
             <p>
               Laboris velit velit adipisicing nostrud fugiat sit laborum nulla
               ut et in duis dolore. Amet nostrud veniam do veniam dolor

@@ -3,18 +3,17 @@
   width: 100%;
   overflow: hidden;
 }
-h3 {
-  /* font-family: "Magmawave Caps", sans-serif; */
-}
+
 .banner{
   position: relative;
+  height: 50rem;
 }
 .banner-container {
   /* background-color: coral;
   border: 3px solid black; */
   text-align: center;
   /* height: 80vh; */
-  height: 118.3vh;
+  height: 50rem;
   position: relative;
 }
 .banner-content{
@@ -22,7 +21,7 @@ h3 {
   top:58%;
   left:55%;
   border: 1px solid rgb(255, 255, 255);
-  height: 25vh;
+  height: 13rem;
   width: 40vw;
   background-color: rgba(0, 0, 0, 0.577);
   color: rgb(255, 255, 255);
@@ -43,7 +42,7 @@ h3 {
   position: relative;
 } */
 .slides img {
-  height: 118.3vh;
+  height: 50rem;
   width: 100%;
 }
 .slides-none {
@@ -86,7 +85,7 @@ h3 {
   text-align: center;
   cursor: pointer;
   position: relative;
-  bottom: 10rem;
+  bottom: 3rem;
   transition: 1s ease;
 }
 .active {

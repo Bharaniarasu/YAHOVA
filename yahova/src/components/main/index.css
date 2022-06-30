@@ -1,0 +1,21 @@
+.chatbot_logo{
+   position: fixed;
+   
+   bottom:1rem;
+   right:5rem;
+   z-index: 99; 
+}
+.chatbot_logo img{
+    width: 7rem;
+    height: 9rem;
+}
+.chatbot{
+    position:fixed;
+    bottom: 10rem;
+    right: 0rem;
+    z-index:99;
+
+}
+.chatbot_null{
+    display: none;
+}

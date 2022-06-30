@@ -6,7 +6,7 @@ const ComponentB = () => {
       <div className="component-b">
         <div className="content">
           <h1>Header</h1>
-          <br />
+          
           <br />
 
           <p>

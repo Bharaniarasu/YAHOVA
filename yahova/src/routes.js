@@ -15,7 +15,7 @@ const CompanyProfile = lazy(() =>
 const Fishing = lazy(() => import("./components/ourBusiness/fishing"));
 const Exports = lazy(() => import("./components/ourBusiness/exports"));
 const SuperMarket = lazy(() => import("./components/ourBusiness/superMarket"));
-const ContactUs = lazy(() => import("./components/contactUs/contact-us"));
+const ContactUs = lazy(() => import("./components/contactUs"));
 // const ContactContent = lazy(() => import("./components/contactUs/content"));
 const Routes = () => (
   <Suspense fallback={<Loader />}>

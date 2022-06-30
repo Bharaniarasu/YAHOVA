@@ -9,8 +9,6 @@ const ComponentA = () => {
           <div className="col-8">
             <h2>Header</h2>
             <br />
-            <br />
-            <br />
 
             <p>
               Sunt aliquip esse non ad laborum id voluptate. Ad est eiusmod amet

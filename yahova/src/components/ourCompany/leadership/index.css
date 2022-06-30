@@ -2,7 +2,7 @@
   position: relative;
 }
 .leadership-comp-a {
-  height: 90vh;
+  height: 45rem;
   width: 100%;
   position: relative;
   background-color: rgb(251, 251, 250);
@@ -10,7 +10,7 @@
 padding: 10rem;
 }
 .leadership-comp-b {
-  height: 100vh;
+  height: 48rem;
   width: 100%;
   position: relative;
   background-color: rgb(245, 224, 216);
@@ -50,7 +50,7 @@ padding: 10rem;
 
 .container-profile {
   background-color: rgb(255, 255, 255);
-  height: 95vh;
+  height: 47vh;
   width: 30vw;
   margin: 1rem;
   box-shadow: #8a8686 1px 1px 6px 3px;
@@ -93,7 +93,7 @@ padding: 10rem;
 }
 .fullpage-first {
   /* background-color: #8a8686; */
-  height: 100vh;
+  height: 48rem;
   padding: 0;
   width: 50%;
   /* margin-top: 10rem; */
@@ -102,7 +102,7 @@ padding: 10rem;
   background-color: #f7f7f7;
   width: 50%;
   margin-top: rem;
-  height: 100vh;
+  height: 48rem;
 
 }
 .fullpage-second-content {

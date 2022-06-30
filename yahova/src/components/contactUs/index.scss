@@ -11,7 +11,7 @@
 .contact-banner {
   /* position: relative; */
   /* top: 0vh; */
-  height: 100vh;
+  height: 50rem;
   width: 100%;
 }
 .contact-logo {
@@ -61,18 +61,18 @@ button:hover .contact-logo {
 }
 .content {
   width: 100%;
-  height: 110vh;
+  // height: 40rem;
   position: relative;
   overflow: hidden;
 }
 
 .content-banner {
   width: 100%;
-  height: 100vh;
+  height: 50rem;
 }
 .content-banner-text {
   position: absolute;
-  top: 25vh;
+  top: 17rem;
   left: 40%;
   /* font-weight: 600; */
 }
@@ -85,10 +85,11 @@ button:hover .contact-logo {
 
 .content-data {
   position: absolute;
-  top: 75vh;
+  top: 35rem;
   left: 1rem;
   width: 100%;
   transition: 1s ease-in;
+  z-index: 9;
 }
 
 .hidden-data {
@@ -98,7 +99,7 @@ button:hover .contact-logo {
   position: absolute;
   top: 10%;
   left: -27%;
-  height: 70vh;
+  height: 38rem;
   transition: 1s ease;
   background-color: rgb(255, 255, 255);
   margin: 1rem;
@@ -136,7 +137,7 @@ button:hover .contact-logo {
   position: absolute;
   top: 10%;
   right: -27%;
-  height: 70vh;
+  height: 38rem;
   background-color: rgb(255, 255, 255);
   margin: 1rem;
   box-shadow: #8a8686 1px 1px 6px 3px;
@@ -201,9 +202,9 @@ button:hover .contact-logo {
 .hidden-data-left-active {
   position: absolute;
   top: 10%;
-  left: 5%;
+  left: 5.7%;
   background-color: rgb(255, 255, 255);
-  height: 70vh;
+  height: 38rem;
   margin: 1rem;
   box-shadow: #8a8686 1px 1px 6px 3px;
   text-align: center;
@@ -218,9 +219,9 @@ button:hover .contact-logo {
 .hidden-data-middle-active {
   position: absolute;
   top: 10%;
-  left: 36.8%;
+  left: 37.5%;
   background-color: rgb(255, 255, 255);
-  height: 70vh;
+  height: 38rem;
   margin: 1rem;
   box-shadow: #8a8686 1px 1px 6px 3px;
   text-align: center;
@@ -234,9 +235,9 @@ button:hover .contact-logo {
 .hidden-data-right-active {
   position: absolute;
   top: 10%;
-  right: 4.5%;
+  right: 3.8%;
   background-color: rgb(255, 255, 255);
-  height: 70vh;
+  height: 38rem;
   margin: 1rem;
   box-shadow: #8a8686 1px 1px 6px 3px;
   text-align: center;
@@ -267,7 +268,7 @@ button:hover .contact-logo {
 }
 .content-data-left {
   background-color: rgb(255, 255, 255);
-  height: 20vh;
+  height: 10rem;
   margin: 1rem;
   box-shadow: #8a8686 1px 1px 6px 3px;
   text-align: center;
@@ -282,7 +283,7 @@ button:hover .contact-logo {
 }
 .content-data-middle {
   background-color: rgb(255, 255, 255);
-  height: 20vh;
+  height: 10rem;
   margin: 1rem;
   box-shadow: #8a8686 1px 1px 6px 3px;
   text-align: center;
@@ -302,7 +303,7 @@ button:hover .contact-logo {
 }
 .content-data-right {
   background-color: rgb(255, 255, 255);
-  height: 20vh;
+  height: 10rem;
   margin: 1rem;
   box-shadow: #8a8686 1px 1px 6px 3px;
   text-align: center;
@@ -335,20 +336,20 @@ button:hover .contact-logo {
   line-height: 2rem;
 }
 
-.content::before {
-  content: "";
-  height: 5.3vh;
-  width: 100%;
-  background-color: rgb(255, 255, 255);
+// .content::before {
+//   content: "";
+//   height: 5.3vh;
+//   width: 100%;
+//   background-color: rgb(255, 255, 255);
 
-  /* background-color: rgb(0, 0, 0); */
-  position: absolute;
-  bottom: 1vh;
-  z-index: 1;
-  /* bottom: -18.3vh; */
-  /* top: 81.5vh; */
-  transform: translateY(50%) skewY(-5deg);
-}
+//   /* background-color: rgb(0, 0, 0); */
+//   position: absolute;
+//   bottom: 1vh;
+//   z-index: 1;
+//   /* bottom: -18.3vh; */
+//   /* top: 81.5vh; */
+//   transform: translateY(50%) skewY(-5deg);
+// }
 .content i {
   font-size: 5rem;
 }
@@ -372,4 +373,14 @@ button:hover .contact-logo {
 .content-data {
   display: flex;
   justify-content: space-evenly;
+}
+
+.contact-us-db {
+  margin-top: 10rem;
+
+  button {
+    height: 3rem;
+    width: 10rem;
+    float: right;
+  }
 }
