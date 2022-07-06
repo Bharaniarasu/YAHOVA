@@ -1,15 +1,12 @@
-import Navbar from "./navbar";
 import "./navMenu.css";
 import { Link } from "react-router-dom";
 import Logo from "../pictures/yt-logo.png";
-import Head from "../pictures/yt-head.jpg";
-import HeadMini from "../pictures/yt-head-mini.jpg";
 
 const NavMenu = () => {
   return (
     <div className="nav-head ">
       <Link to="/" className="nav-head-link ">
-        <img className="nav-logo " src={Logo} />
+        <img className="nav-logo " alt="" src={Logo} />
       </Link>
       <div className="nav-head-title">
         {" "}
@@ -18,13 +15,10 @@ const NavMenu = () => {
           YAHOVA <span className="nav-head-traders">TRADERS</span>{" "}
           <span class="nav-head-span">PRIVATE LIMITED</span>
         </h1>
-        {/* <img src={Head} className="head" />
-        <img src={HeadMini} className="head-mini" />{" "} */}
-        <p>
+        {/* <p>
           No.8/466, Gandhi Street , Vijaya Nagaram, Medavakkam, Chennai 600 100
-        </p>
+        </p> */}
       </div>
-      {/* <Navbar /> */}
     </div>
   );
 };

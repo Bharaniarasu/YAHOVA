@@ -1,15 +1,11 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import OurBusiness from "../dropdown/ourBusiness";
-import OurCompany from "../dropdown/ourCompany";
-import ContactUs from "../dropdown/contactUs";
+import OurBusiness from "../pages/dropdown/ourBusiness";
+import OurCompany from "../pages/dropdown/ourCompany";
 import "./navbar.css";
 import NavMenu from "./navMenu";
-import Logo from "../pictures/logo.jpeg";
-import Footer from "../footer";
-import Progress from "../scrollEffect";
-// const { Header, Content, Footer } = Layout;
+import Progress from "../scrollBar";
 const Navbar = (props) => {
   const [icon, setIcon] = useState(false);
   const [showCompanyDropdown, setCompanyDropdown] = useState(false);
@@ -28,12 +24,6 @@ const Navbar = (props) => {
   const unselectBusiness = () => {
     setBusinessDropdown(false);
   };
-  // const selectContact = () => {
-  //   setContactDropdown(true);
-  // };
-  // const unselectContact = () => {
-  //   setContactDropdown(false);
-  // };
 
   const toggleIcon = () => {
     setIcon(!icon);
@@ -41,10 +31,6 @@ const Navbar = (props) => {
   const closeSidebar = () => {
     setIcon(false);
   };
-
-  // const { children } = props;
-  // console.log("---   " + children + "-- " + props);
-  // console.log(children);
 
   const navbar = document.querySelector(".navbars");
 
@@ -68,16 +54,12 @@ const Navbar = (props) => {
       : (navbar.style.top = "-100px");
     prevScrollPos = currentScrollPos;
   });
-  // console.log(window.innerHeight);
-  // const navbar = document.querySelector(".navbars");
 
   useEffect(() => {
     listenToScrollEvent();
   }, []);
   const listenToScrollEvent = () => {
     window.addEventListener("scroll", () => {
-      // calculateScrollDistance();
-
       requestAnimationFrame(() => {
         calculateScrollDistance();
       });
@@ -119,7 +101,6 @@ const Navbar = (props) => {
             <FaBars className="fa-bars" />
           )}
         </div>
-        {/* <NavMenu /> */}
 
         <ul className={icon ? "nav-menu active" : "nav-menu"}>
           <li
@@ -129,16 +110,7 @@ const Navbar = (props) => {
             onClick={closeSidebar}
           >
             {" "}
-            Our Company{" "}
-            {/* <i
-              className={
-                showCompanyDropdown
-                  ? "fa fa-angle-down right-arrow"
-                  : "fa fa-angle-right right-arrow"
-              }
-            ></i> */}
-            {showCompanyDropdown && <OurCompany />}
-            {/* <OurCompany />{" "} */}
+            Our Company {showCompanyDropdown && <OurCompany />}
           </li>
 
           <li
@@ -149,28 +121,15 @@ const Navbar = (props) => {
           >
             Our Business
             {showBusinessDropdown && <OurBusiness />}
-            {/* <OurBusiness /> */}
           </li>
 
-          <li
-            // onMouseLeave={unselectContact}
-            className="nav-links"
-            // onMouseEnter={selectContact}
-            onClick={closeSidebar}
-          >
+          <li className="nav-links" onClick={closeSidebar}>
             <Link to="/contact-us" className="nav-links-link">
               Contact Us
             </Link>
-            {/* {showContactDropdown && <ContactUs />} */}
-            {/* <ContactUs /> */}
           </li>
         </ul>
-
-        {/* <Content>{Children}</Content> */}
       </nav>
-      {/* <div className="i">{children}</div> */}
-
-      {/* <Footer /> */}
     </>
   );
 };

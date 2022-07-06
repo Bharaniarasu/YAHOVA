@@ -1,46 +1,23 @@
 img {
 }
-:root{
-    scrollbar-face-color: #fc7613; /* Firefox 63 compatibility */
-    scrollbar-track-color: rgb(81, 82, 82); /* Firefox 63 compatibility */
-    scrollbar-color: #fc7613 rgb(81, 82, 82);
-    scrollbar-width: thin;
-  }
-
-::-webkit-scrollbar{
-    width:5px;
-}
-::-webkit-scrollbar-track{
-    background-color: rgb(81, 82, 82)
-}
-::-webkit-scrollbar-thumb{
-    background-color: #fc7613;
-    // border-radius: 10px;
-}
-::selection{
-    background-color: #fc7613;
-    color:white;
+:root {
+  scrollbar-face-color: #fc7613; /* Firefox 63 compatibility */
+  scrollbar-track-color: rgb(81, 82, 82); /* Firefox 63 compatibility */
+  scrollbar-color: #fc7613 rgb(81, 82, 82);
+  scrollbar-width: thin;
 }
 
-// body::-webkit-scrollbar {
-//     width: 12px;               /* width of the entire scrollbar */
-//   }
-  
-  
-//   body::-webkit-scrollbar-track {
-//     background: orange;        /* color of the tracking area */
-//   }
-  
-  
-//   body::-webkit-scrollbar-thumb {
-//     background-color: blue;    /* color of the scroll thumb */
-//     border-radius: 20px;       /* roundness of the scroll thumb */
-//     border: 3px solid orange;  /* creates padding around scroll thumb */
-//   }
-//   body {
-//     width: 300px;
-//     height: 100px;
-//     overflow-y: scroll;
-//     scrollbar-color: rebeccapurple green;
-//     scrollbar-width: thin;
-//   }
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(81, 82, 82);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #fc7613;
+  // border-radius: 10px;
+}
+::selection {
+  background-color: #fc7613;
+  color: white;
+}

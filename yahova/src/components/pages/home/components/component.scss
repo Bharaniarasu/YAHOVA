@@ -1,0 +1,124 @@
+.component-a {
+  position: relative;
+  height: 32rem;
+  width: 100%;
+  background-color: rgb(246, 246, 246);
+
+  .content {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 80%;
+    z-index: 2;
+    width: 80%;
+    font-size: 1.2vw;
+  }
+  img {
+    width: 30vw;
+    height: 100%;
+  }
+}
+.component-b {
+  position: relative;
+  background: url("../../../pictures/clock.jpg") no-repeat fixed center;
+  background-size: cover;
+
+  height: 45rem;
+  width: 100%;
+  .content {
+    border: 2px solid white;
+    padding: 2rem;
+    position: absolute;
+    top: 22%;
+    background-color: rgba(0, 0, 0, 0.311);
+    color: white;
+    margin: 2rem;
+    h1 {
+      font-weight: 600;
+    }
+    p {
+      font-size: 1.2vw;
+      line-height: 2rem;
+      text-align: justify;
+    }
+  }
+}
+.component-c {
+  position: relative;
+  height: 35rem;
+  width: 100%;
+  background-color: aliceblue;
+  .content {
+    position: relative;
+    width: 100%;
+    padding: 3rem;
+    margin: 0 1rem;
+    .content-1,
+    .content-2,
+    .content-3,
+    .content-4 {
+      height: 20rem;
+      margin: 1rem;
+      width: 22%;
+      box-shadow: 0px 2px 10px 2px rgb(105, 104, 104);
+      padding: 2rem;
+    }
+    .content-1:hover,
+    .content-2:hover,
+    .content-3:hover,
+    .content-4:hover {
+      box-shadow: 0px 2px 10px 4px rgb(105, 104, 104);
+    }
+    .content-header {
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+}
+.component-d {
+  position: relative;
+  height: 30rem;
+  width: 100%;
+  background: url("../../../pictures/world-map.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  .content {
+    position: absolute;
+    top: 15%;
+
+    padding: 3rem 1rem;
+  }
+  .content-1,
+  .content-2,
+  .content-3,
+  .content-4 {
+    padding: 2rem;
+    text-align: center;
+  }
+  img {
+    height: 4rem;
+  }
+  h4 {
+    font-weight: 600;
+  }
+}
+
+.component-e {
+  height: 50rem;
+  position: relative;
+  .content {
+    padding: 3rem 5rem;
+    .content-data {
+      padding: 3rem;
+      text-align: justify;
+    }
+    .content-img {
+      margin-top: 6rem;
+      padding: 2rem;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

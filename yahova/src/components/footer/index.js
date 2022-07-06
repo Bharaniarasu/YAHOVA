@@ -6,12 +6,10 @@ const Footer = () => {
     <div className="footer">
       <div className="row footer-content">
         <div className="col-4 offset-1 footer-logo">
-          <img src={Logo} />
-          {/* <i className="fa fa-envelope"></i> */}
+          <img src={Logo} alt="" />
         </div>
         <div className="col-2 offset-1 footer-our-company">
           <ul>
-            {/* <span className="our-company-header">Our Company</span> */}
             <li>Our Company</li>
             <li>
               <Link to="our-company/about-us" className="our-company-links">
@@ -35,7 +33,6 @@ const Footer = () => {
         </div>
         <div className="col-2 footer-our-business">
           <ul>
-            {/* <span className="our-business-header">Our Business</span> */}
             <li>Our Business</li>
             <li>
               <Link to="/our-business/fishing" className="our-business-links">
@@ -68,8 +65,6 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-copyright">@copyright02021.</div>
-
-      {/* <hr /> */}
     </div>
   );
 };

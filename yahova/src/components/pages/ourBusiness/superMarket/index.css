@@ -1,0 +1,20 @@
+.super-market-banner {
+  width: 100%;
+  height: 50rem;
+}
+.super-market-component-a,
+.super-market-component-b,
+.super-market-component-c {
+  width: 100%;
+  height: 50rem;
+  position: relative;
+}
+.super-market-component-a {
+}
+.super-market-component-b {
+  background-color: rgb(253, 231, 159);
+}
+.super-market-component-c {
+  background-color: rgb(255, 198, 181);
+}
+

@@ -1,0 +1,342 @@
+.contact-us {
+  width: 100%;
+  position: relative;
+}
+
+.contact-links {
+  position: absolute;
+  top: 22vh;
+}
+.contact-banner {
+  height: 50rem;
+  width: 100%;
+}
+.contact-logo {
+  font-size: 8rem;
+  width: rem;
+  border: none;
+  background-color: transparent;
+  opacity: 0;
+  position: relative;
+  justify-content: center;
+  z-index: 1;
+  left: 1.8rem;
+  color: wheat;
+}
+.contact-logo:nth-child(2) {
+  left: 3rem;
+}
+.contact-logo:nth-child(3) {
+  left: 4rem;
+}
+
+button {
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.979);
+  border-radius: 3rem;
+  width: 22.5rem;
+  height: 5rem;
+}
+.contact-logo:hover .contact-logo {
+  opacity: 1;
+}
+button:hover .contact-logo {
+  opacity: 0.5;
+}
+
+.contact-logo:nth-child(2) {
+  color: aqua;
+}
+.content {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-banner {
+  width: 100%;
+  height: 50rem;
+}
+.content-banner-text {
+  position: absolute;
+  top: 17rem;
+  left: 40%;
+}
+.content-banner-text::-moz-selection {
+  background-color: #fc7613;
+}
+.content-banner-text h1 {
+  font-weight: 600;
+}
+
+.content-data {
+  position: absolute;
+  top: 35rem;
+  left: 1rem;
+  width: 100%;
+  transition: 1s ease-in;
+  z-index: 9;
+}
+
+.hidden-data {
+  transition: 1s ease-in;
+}
+.hidden-data-left {
+  position: absolute;
+  top: 10%;
+  left: -27%;
+  height: 38rem;
+  transition: 1s ease;
+  background-color: rgb(255, 255, 255);
+  margin: 1rem;
+  box-shadow: #8a8686 1px 1px 6px 3px;
+  text-align: center;
+  line-height: 2rem;
+  padding: 2rem;
+  transition: 1s ease;
+
+  p {
+    margin: 4rem 0;
+  }
+  h4 {
+    color: rgb(30, 133, 197);
+  }
+}
+
+.hidden-data-middle {
+  position: absolute;
+  top: -70%;
+  left: 36.8%;
+  transition: 1s ease;
+  background-color: rgb(255, 255, 255);
+  margin: 1rem;
+  box-shadow: #8a8686 1px 1px 6px 3px;
+  text-align: center;
+  line-height: 2rem;
+  padding: 2rem;
+  transition: 1s ease;
+  p {
+    margin: 4rem 0;
+  }
+}
+.hidden-data-right {
+  position: absolute;
+  top: 10%;
+  right: -27%;
+  height: 38rem;
+  background-color: rgb(255, 255, 255);
+  margin: 1rem;
+  box-shadow: #8a8686 1px 1px 6px 3px;
+  text-align: center;
+  line-height: 2rem;
+  padding: 2rem;
+  transition: 1s ease;
+  p {
+    margin: 4rem 0;
+  }
+
+  .button {
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid #fc7613;
+    padding: 1rem 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: color 1s;
+    z-index: 1;
+    color: black;
+  }
+  .button:hover {
+    color: #f7f7f7;
+  }
+
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0vh;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    background-color: #fc7613;
+    transform: skewX(0deg);
+    z-index: -1;
+    transition: width 1s;
+    overflow: hidden;
+  }
+  .button:hover::before {
+    width: 100%;
+  }
+}
+.hidden-data-left-active {
+  position: absolute;
+  top: 10%;
+  left: 5.7%;
+  background-color: rgb(255, 255, 255);
+  height: 38rem;
+  margin: 1rem;
+  box-shadow: #8a8686 1px 1px 6px 3px;
+  text-align: center;
+  line-height: 4rem;
+  padding: 2rem;
+  transition: 1s ease;
+  p {
+    margin: 4rem 0;
+    line-height: 2rem;
+  }
+}
+.hidden-data-middle-active {
+  position: absolute;
+  top: 10%;
+  left: 37.5%;
+  background-color: rgb(255, 255, 255);
+  height: 38rem;
+  margin: 1rem;
+  box-shadow: #8a8686 1px 1px 6px 3px;
+  text-align: center;
+  line-height: 2rem;
+  padding: 2rem 0;
+  transition: 1s ease;
+  p {
+    margin: 4rem 0;
+  }
+}
+.hidden-data-right-active {
+  position: absolute;
+  top: 10%;
+  right: 3.8%;
+  background-color: rgb(255, 255, 255);
+  height: 38rem;
+  margin: 1rem;
+  box-shadow: #8a8686 1px 1px 6px 3px;
+  text-align: center;
+  line-height: 2rem;
+  padding: 2rem;
+  transition: 1s ease;
+  animation: none;
+
+  p {
+    margin: 4rem 0;
+  }
+  button {
+    color: black;
+    font-weight: 700;
+    font-size: 1.3rem;
+    align-content: center;
+    background-color: #fd9144;
+    width: 50%;
+    line-height: 0;
+    border: none;
+    border-radius: 0;
+  }
+  button:hover {
+    background-color: #fc7613;
+    transition: 0.5s ease;
+    box-shadow: #8a8686 1px 1px 2px 1px;
+  }
+}
+.content-data-left {
+  background-color: rgb(255, 255, 255);
+  height: 10rem;
+  margin: 1rem;
+  box-shadow: #8a8686 1px 1px 6px 3px;
+  text-align: center;
+  padding: 2rem;
+  transition: 1s ease;
+  opacity: 0.9;
+  animation: float 5s ease-in-out infinite;
+}
+.content-data-left:hover {
+  opacity: 1;
+  animation: none;
+}
+.content-data-middle {
+  background-color: rgb(255, 255, 255);
+  height: 10rem;
+  margin: 1rem;
+  box-shadow: #8a8686 1px 1px 6px 3px;
+  text-align: center;
+  padding: 2rem 0;
+  transition: 1s ease;
+  opacity: 0.9;
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 1s;
+}
+.content-data-middle:hover {
+  opacity: 1;
+  animation: none;
+}
+.content-data-left h3,
+.content-data-middle h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.content-data-right {
+  background-color: rgb(255, 255, 255);
+  height: 10rem;
+  margin: 1rem;
+  box-shadow: #8a8686 1px 1px 6px 3px;
+  text-align: center;
+  line-height: 7rem;
+  padding: 2rem;
+  opacity: 0.9;
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 2s;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.content-data-right:hover {
+  opacity: 1;
+  animation: none;
+}
+
+.content-data-left > p,
+.content-data-right > p,
+.content-data-middle > p {
+  margin: 3rem 0;
+  line-height: 2rem;
+}
+
+.content i {
+  font-size: 5rem;
+}
+.content-data-right > button {
+  color: black;
+  font-weight: 700;
+  font-size: 1.3rem;
+  align-content: center;
+  background-color: #fd9144;
+  width: 50%;
+  line-height: 0;
+  border: none;
+  border-radius: 0;
+}
+.content-data-right > button:hover {
+  background-color: #fc7613;
+  transition: 0.5s ease;
+  box-shadow: #8a8686 1px 1px 2px 1px;
+}
+
+.content-data {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-us-db {
+  margin-top: 10rem;
+
+  button {
+    height: 3rem;
+    width: 10rem;
+    float: right;
+  }
+}
