@@ -15,10 +15,11 @@ const Main = (props) => {
       <Navbar />
       <div>{children}</div>
       <div className="chatbot_logo">
-        <img src={Bot} onClick={chatBotHandler} />
+        <img src={Bot} alt="" onClick={chatBotHandler} />
       </div>
       <div className={chatBot ? "chatbot" : "chatbot_null"}>
         <iframe
+          title="ChatBot"
           allow="microphone;"
           width="330"
           height="500"
