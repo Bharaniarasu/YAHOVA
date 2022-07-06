@@ -1,7 +1,6 @@
 import Footer from "../footer";
 import Navbar from "../navbar/navbar";
 import "./index.css";
-import ChatBot from "../pictures/chatBot.png";
 import Bot from "../pictures/bot-1.png";
 
 import { useState } from "react";
