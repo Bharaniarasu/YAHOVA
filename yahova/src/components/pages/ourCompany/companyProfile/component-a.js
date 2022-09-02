@@ -8,7 +8,7 @@ const ComponentA = () => {
           <div className="row ">
             <div className=" col-4 offset-3">Company Name</div>
             <div className=" col-4  offset-0">
-              YAHOVA TRADERS PRIVATE LIMITED
+              ABCD TRADERS PRIVATE LIMITED
             </div>
           </div>
           <div className="row ">
@@ -21,8 +21,8 @@ const ComponentA = () => {
               <p>
                 No.8/466,
                 <br /> Gandhi Street ,<br /> Vijaya Nagaram,
-                <br /> Medavakkam,
-                <br /> Chennai 600 100
+                <br /> Nungambakkam,
+                <br /> Chennai 600 001
               </p>
             </div>
           </div>{" "}
@@ -33,7 +33,7 @@ const ComponentA = () => {
           <div className="row ">
             <div className=" col-4 offset-3 ">Mail-ID</div>
             <div className=" col-4 offset-0 ">
-              yahovatraderspvtltd@gmail.com
+              abcdtraders@gmail.com
             </div>
           </div>
         </div>
