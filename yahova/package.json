@@ -1,6 +1,7 @@
 {
   "name": "yahova",
   "version": "0.1.0",
+  "homepage": "http://projectsix.ultihost.net",
   "private": true,
   "homepage": "https://bharaniarasu.github.io/YAHOVA/yahova/src",
   "dependencies": {
